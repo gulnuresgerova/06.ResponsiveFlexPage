@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 1%;
+}
+body {
+  width: 1024px;
+}
+.mean {
+  display: flex;
+}
+.mean.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  margin: 2%;
+}
+.mean .left .top-left {
+  display: flex;
+}
+.mean .left .top-left .top-left-left {
+    border-radius: 15px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+.mean .left .top-left .top-left-right {
+    border-radius: 15px;
+  width: 250px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+.mean .buttom-left {
+  display: flex;
+  flex-direction: column;
+}
+.mean .left .buttom-left .buttom-left-top {
+    border-radius: 15px;
+  width: 488px;
+  height: 108px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+.mean .left .buttom-left .buttom-left-buttom {
+  display: flex;
+}
+.mean .left .buttom-left .buttom-left-buttom {
+}
+.left1,
+.left2,
+.left3,
+.left4 {
+    border-radius: 15px;
+  display: flex;
+  height: 100px;
+  width: 129px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+.mean .right {
+  display: flex;
+  flex-direction: column;
+}
+.mean .right .top-right {
+  display: flex;
+  flex-direction: column;
+}
+.mean .right .top-right-top {
+    border-radius: 15px;
+  width: 488px;
+  height: 108px;
+  color: aliceblue;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+.mean .right .top-right .top-right-buttom {
+  display: flex;
+  flex-direction: row;
+}
+.right1,
+.right2,
+.right3,
+.right4 {
+    border-radius: 15px;
+  display: flex;
+  height: 100px;
+  width: 129px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+.mean .right .buttom-right {
+    border-radius: 15px;
+  height: 195px;
+  width: 500px;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 7px rgb(5, 7, 49);
+}
+@media screen and (max-width: 1023px) {
+  .mean {
+    box-shadow: 10px 10px 7px rgb(49, 5, 5);
+    padding: 0 5%;
+    flex-direction: column;
+    display: block;
+  }
+  .mean .left {
+    order: 1;
+  }
+  .mean .left .top-left .top-left-left,
+  .mean .left .top-left .top-left-right {
+    box-shadow: 10px 10px 7px rgb(49, 5, 5);
+    background-color: brown;
+    width: 288px;
+    height: 90px;
+    box-shadow: 10px 10px 7px rgb(49, 5, 5);
+  }
+  .mean .left .buttom-left .buttom-left-top,
+  .mean .right .top-right-top,
+  .mean .right .buttom-right {
+    width: 588px;
+    height: 90px;
+    background-color: brown;
+    border-radius: 15px;
+    box-shadow: 10px 10px 7px rgb(49, 5, 5);
+  }
+  .right1,
+  .right2,
+  .right3,
+  .right4,
+  .left1,
+  .left2,
+  .left3,
+  .left4 {
+    background-color: brown;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 7px rgb(49, 5, 5);
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .mean {
+    padding: 0 5%;
+    flex-direction: column;
+    display: block;
+  } 
+ 
+  .mean .left .top-left {
+    flex-direction: column;
+  }
+  .buttom-left-buttom {
+    flex-direction: column;
+  }
+  .mean .right  .top-right .top-right-buttom {
+    flex-direction: column;
+  }
+  .mean .left .top-left .top-left-left
+  , .mean .left .top-left .top-left-right ,
+  .mean .left .buttom-left .buttom-left-top,
+  .mean .right .top-right .top-right-top , 
+  .mean .right .buttom-right
+  {
+    background-color: green;
+    width: 300px;
+    height: 80px;
+    box-shadow: 10px 10px 7px rgb(5, 49, 5);
+    border-radius: 15px;
+   }
+.left1 , .left2 ,.left3 , .left4 ,
+.right1 , .right2 , .right3 , .right4{
+    background-color: green;
+    width: 300px;
+    height: 80px;
+    box-shadow: 10px 10px 7px rgb(5, 49, 5);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+}
+
+}
